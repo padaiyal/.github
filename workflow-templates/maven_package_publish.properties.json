@@ -1,0 +1,12 @@
+{
+    "name": "Maven package and publish - package verify deploy",
+    "description": "padaiyal CD workflow template for java projects.",
+    "iconName": "maven_build.svg",
+    "categories": [
+        "Java",
+	"Maven POM"
+    ],
+    "filePatterns": [
+        "pom.xml"
+    ]
+}

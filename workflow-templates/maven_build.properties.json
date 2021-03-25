@@ -1,0 +1,12 @@
+{
+    "name": "Maven build - clean test verify",
+    "description": "padaiyal CI workflow template for java projects.",
+    "iconName": "maven_build.svg",
+    "categories": [
+        "Java",
+	"Maven POM"
+    ],
+    "filePatterns": [
+        "pom.xml"
+    ]
+}
