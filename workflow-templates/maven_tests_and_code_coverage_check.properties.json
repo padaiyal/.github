@@ -1,0 +1,12 @@
+{
+    "name": "Maven tests and code coverage check - JUnit and JaCoCo",
+    "description": "padaiyal CI workflow template for running unit tests and verifying code coverage.",
+    "iconName": "maven_build",
+    "categories": [
+        "Java",
+        "Maven POM"
+    ],
+    "filePatterns": [
+        "pom.xml"
+    ]
+}
