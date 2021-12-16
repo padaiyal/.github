@@ -1,6 +1,6 @@
 {
-    "name": "Maven package and publish - package verify deploy",
-    "description": "padaiyal CD workflow template for java projects.",
+    "name": "Maven linting check - Checkstyle",
+    "description": "padaiyal CI workflow template for checking code lint.",
     "iconName": "maven_build",
     "categories": [
         "Java",
