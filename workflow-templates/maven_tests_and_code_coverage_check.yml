@@ -29,4 +29,4 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
       - name: Run unit tests and code coverage check - JUnit and JaCoCo
-        run: mvn -e test -Dcheckstyle.skip --file pom.xml
+        run: mvn -e -"Dgpg.skip" test -Dcheckstyle.skip --file pom.xml
