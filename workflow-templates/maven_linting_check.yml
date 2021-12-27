@@ -29,4 +29,4 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
       - name: Run linting check - Checkstyle
-        run: mvn -e checkstyle:check --file pom.xml
+        run: mvn -e -"Dgpg.skip" checkstyle:check --file pom.xml

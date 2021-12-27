@@ -31,5 +31,9 @@ jobs:
         path: ~/.m2
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-m2
-    - name: Build with Maven
-      run: mvn -e clean test verify --file pom.xml
+    - name: Run linting check - Checkstyle
+      run: mvn -e -"Dgpg.skip" checkstyle:check --file pom.xml
+    - name: Run static code analysis - PMD
+      run: mvn -e -"Dgpg.skip" pmd:check --file pom.xml
+    - name: Run unit tests and code coverage check - JUnit and JaCoCo
+      run: mvn -e test -"Dcheckstyle.skip" -"Dgpg.skip" --file pom.xml
