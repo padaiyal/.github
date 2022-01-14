@@ -7,9 +7,9 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 <div align="center">
-  <h1 align="center">jPadaiyal .github default</h1>
+  <h1 align="center">padaiyal .github default</h1>
   <p align="center">
-    A default .github folder for Java projects.
+    A default .github folder for padaiyal projects.
     <br />
     <a href="https://github.com/padaiyal/.github/issues/new/choose">Report Bug/Request Feature</a>
   </p>

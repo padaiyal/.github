@@ -1,0 +1,12 @@
+{
+    "name": "Python build - linting and testing",
+    "description": "padaiyal CI workflow template for python projects.",
+    "iconName": "python_build",
+    "categories": [
+        "Python"
+    ],
+    "filePatterns": [
+        "setup.py",
+        "requirements.txt"
+    ]
+}
