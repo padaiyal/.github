@@ -4,9 +4,9 @@ name: Python build - linting and testing
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches: [ main ]
   pull_request:
-    branches: [ $default-branch ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Checkout submodules
-        run: git submodule update --init --recursive
+      run: git submodule update --init --recursive
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
@@ -59,7 +59,7 @@ jobs:
         # E901	SyntaxError or IndentationError
         # E902	IOError
 
-        flake8 . --count --max-complexity=10 --max-line-length=80 --statistics
+        flake8 . --count --max-complexity=10 --max-line-length=120 --statistics
     - name: Run unit tests - unittest
       run: |
-        python -m unittest
+        python -m unittest discover test
